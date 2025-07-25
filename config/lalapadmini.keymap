@@ -216,7 +216,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans       &mkp MCLK  &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &MACRO_LTAP  &mkp LCLK  &mkp RCLK  &mo 5
-&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4     &to 0      &mkp MB5   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4     &none      &mkp MB5   &trans
 &trans  &trans          &trans  &trans  &trans  &trans                  &trans     &trans
             >;
         };
@@ -248,6 +248,16 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans          &trans  &trans  &trans  &trans          &trans  &trans
+            >;
+        };
+
+        mouse_layer {
+            display-name = "mouse_r_layer";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &mkp MCLK  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &MACRO_LTAP  &mkp LCLK  &mkp RCLK  &mo 5
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4     &to 0      &mkp MB5   &trans
+&trans  &trans          &trans  &trans  &trans  &trans                  &trans     &trans
             >;
         };
     };
