@@ -13,6 +13,7 @@
 #define SCROLL_R_LAYER  5
 #define MOUSE_L_LAYER   6
 #define SCROLL_L_LAYER  7
+#define MOUSE_LAYER     8
 
 // Mouse Scroll Value
 
@@ -34,7 +35,7 @@
             <&zip_temp_layer MOUSE_R_LAYER 300>;
     };
     mousemode{
-        layers = <mouse_layer>;
+        layers = <MOUSE_LAYERj>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
             <&zip_xy_scaler 3 2>;
@@ -257,8 +258,8 @@
             >;
         };
 
-        mouse_layer {
-            display-name = "mouse_r_layer";
+        MOUSE_LAYER {
+            display-name = "mouse_layer";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans       &mkp MCLK  &trans     &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &MACRO_LTAP  &mkp LCLK  &mkp RCLK  &mo 5
