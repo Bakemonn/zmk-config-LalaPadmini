@@ -34,7 +34,8 @@
             <&zip_xy_scaler 3 5>,
             <&zip_temp_layer MOUSE_R_LAYER 300>;
     };
-    mousemode{
+
+    mousemode {
         layers = <MOUSE_LAYER>;
         input-processors =
             <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
@@ -175,10 +176,10 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp Q           &kp W         &kp E  &kp R      &kp T        &kp Y            &kp U      &kp I      &kp O                      &kp P
-&kp A           &kp S         &kp D  &kp F      &kp G        &kp H            &kp J      &kp K      &kp L                      &mt2 EQUAL MINUS
-&kp Z           &kp X         &kp C  &kp V      &kp B        &kp N            &kp M      &kp COMMA  &kp PERIOD                 &mt RSHIFT SLASH
-&kp LEFT_SHIFT  &kp LEFT_ALT         &kp LCTRL  &lt 1 SPACE  &lt 2 BACKSPACE  &kp ENTER             &mt KP_NUMLOCK LANGUAGE_2  &mt RCTRL LANGUAGE_1
+&kp Q           &kp W         &kp E  &kp R      &kp T        &kp Y            &kp U      &kp I      &kp O                         &kp P
+&kp A           &kp S         &kp D  &kp F      &kp G        &kp H            &kp J      &kp K      &kp L                         &mt2 EQUAL MINUS
+&kp Z           &kp X         &kp C  &kp V      &kp B        &kp N            &kp M      &kp COMMA  &kp PERIOD                    &mt RSHIFT SLASH
+&kp LEFT_SHIFT  &kp LEFT_ALT         &kp LCTRL  &lt 1 SPACE  &lt 2 BACKSPACE  &kp ENTER             &mt RIGHT_CONTROL LANGUAGE_2  &lt 8 LANGUAGE_1
             >;
         };
 
