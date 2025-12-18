@@ -252,63 +252,63 @@
             >;
         };
 
- SCROLL_R_LAYER {
- 表生名 = "scroll_r_layer";
- サロンガロンガロン = <
-&ガンガン &ガンガン &ガンガン &ガンガン &ガンガン &ガンガン
-&ガンガン &ガンガン &ガンガン &ガンガン &ガンガン &ガンガン
-&ガンガン &ガンガン &ガンガン &ガンガン &ガンガン &ガンガン
-&ガンガン &ガンガン &ガンガン &ガンガン &ガンガン &ガンガン
- >;
- };
+        SCROLL_R_LAYER {
+            display-name = "scroll_r_layer";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans  &trans  &trans          &trans  &trans
+            >;
+        };
 
- みる_L_る {
- 表生名 = 「んくス_l_んくヤ”;
- サササ = <
-&マクリ &マクリ &マクリ &マクリ
-&mo 7 &MACRO_LTAP &mkp LCLK &mkp RCLK &trans &trans &trans &trans
-&オンMB4 &オンMB5 &オン &オン &オン
-&ガンガン &ガンガン &ガンガン &ガンガン &ガンガン &ガンガン
- >;
- };
+        MOUSE_L_LAYER {
+            display-name = "mouse_l_layer";
+            bindings = <
+&trans  &trans       &mkp MCLK  &trans     &trans  &trans  &trans  &trans  &trans  &trans
+&mo 7   &MACRO_LTAP  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mkp MB4     &trans     &mkp MB5   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &trans     &trans  &trans  &trans          &trans  &trans
+            >;
+        };
 
- SCROLL_L_LAYER {
- 表被合 = "scroll_l_layer";
- サササ = <
-&ガンガン &ガンガン &ガンガン &ガンガン &ガンガン &ガンガン
-&ガンガン &ガンガン &ガンガン &ガンガン &ガンガン &ガンガン
-&ガンガン &ガンガン &ガンガン &ガンガン &ガンガン &ガンガン
-&ガンガン &ガンガン &ガンガン &ガンガン &ガンガン &ガンガン
- >;
- };
+        SCROLL_L_LAYER {
+            display-name = "scroll_l_layer";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans  &trans  &trans          &trans  &trans
+            >;
+        };
 
- ・くー_くー {
- 表山名 = "mouse_layer";
- サササ = <
-&trans &trans &trans &trans &mkp MCLK &trans &trans
-&trans &trans &trans &trans &MACRO_LTAP &mkp LCLK &mkp RCLK &mo 9
-&trans &trans &trans &mkp MB4 &to 0 &mkp MB5 &kp KP_NUMLOCK
-&ラ_CTRLSHIFT_M
- >;
- };
+        MOUSE_LAYER {
+            display-name = "mouse_layer";
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans       &mkp MCLK  &trans     &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &MACRO_LTAP  &mkp LCLK  &mkp RCLK  &mo 9
+&trans  &trans  &trans  &trans  &trans  &trans  &mkp MB4     &to 0      &mkp MB5   &kp KP_NUMLOCK
+&trans  &trans          &trans  &trans  &trans  &trans                  &trans     &MACRO_CTRLSHIFT_M
+            >;
+        };
 
- SCROLL_LAYER {
- display-name = "scroll_layer";
- サササ = <
-&kp Z &ガンガン &ガンガン &ガンガン &ガンガン &ガンガン
-&ガンガン &ガンガン &ガンガン &ガンガン &ガンガン &ガンガン
-&ガンガン &ガンガン &ガンガン &ガンガン &ガンガン &ガンガン
-&ガンガン &ガンガン &ガンガン &ガンガン &ガンガン &ガンガン
- >;
- };
- };
+        SCROLL_LAYER {
+            display-name = "scroll_layer";
+            bindings = <
+&kp Z   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans  &trans  &trans  &trans          &trans  &trans
+            >;
+        };
+    };
 
- 我他他き_みりん {
- 互換性層 = "zmk,conditional-layers";
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
 
- System_layer {
- if-layers = <1 2>;
- then-layer = <3>;
- };
- };
+        System_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
 };
